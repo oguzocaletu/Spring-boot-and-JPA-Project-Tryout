@@ -2,6 +2,8 @@ package com.myspring.project.msp.student;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.Period;
+
 @Entity
 @Table
 public class Student
@@ -20,29 +22,25 @@ public class Student
 
     private Long id;
     private String name;
-    private int age;
+    @Transient
+    private Integer age;
     private LocalDate dob;
     private String email;
 
     public Student(String name,
-                   int age,
                    String email,
                    LocalDate dob) {
         this.name = name;
-        this.age = age;
-
         this.email = email;
         this.dob = dob;
     }
 
     public Student(Long id,
                    String name,
-                   int age,
                    String email,
                    LocalDate dob) {
         this.id = id;
         this.name = name;
-        this.age = age;
         this.email = email;
         this.dob = dob;
     }
@@ -63,11 +61,15 @@ public class Student
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public Student() {
     }
 
-    public void setAge(int age) {
+    public Integer getAge() {
+
+        return Period.between(this.dob,LocalDate.now()).getYears();
+    }
+
+    public void setAge(Integer age) {
         this.age = age;
     }
 

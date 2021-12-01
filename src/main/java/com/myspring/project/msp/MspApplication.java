@@ -15,7 +15,7 @@ public class MspApplication {
 
         SpringApplication app = new SpringApplication(MspApplication.class);
         app.setDefaultProperties(Collections
-                .singletonMap("server.port", "8084"));
+                .singletonMap("server.port", "8085"));
         app.run(args);
     }
 

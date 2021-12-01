@@ -18,27 +18,30 @@ public class StudentConfig {
         return args -> {
             Student Faruk=new Student(
                     "Faruk",
-                    32,
                     "FarukYilmaz@gmail.com",
                     LocalDate.of(1989, Month.FEBRUARY,11)
 
             );
             Student Fatma= new Student (
                     "Fatma",
-                    28,
                     "Fatma@gmail.com",
                     LocalDate.of(1993, Month.DECEMBER,21)
 
             );
-            Student ayca= new Student (
-                    "ayca",
-                    26,
+            Student Ayca= new Student (
+                    "Ayca",
                     "ayca@gmail.com",
                     LocalDate.of(1995, Month.OCTOBER,30)
 
             );
+            Student Oguz=new Student(
+                    "Oguz",
+                    "oguzocaletu@gmail.com",
+                    LocalDate.of(1999, Month.NOVEMBER,23)
+
+            );
             repository.saveAll(
-                    List.of(Faruk,Fatma,ayca)
+                    List.of(Faruk,Fatma,Ayca,Oguz)
             );
         };
     }
