@@ -7,5 +7,5 @@ To understand the web service architechture and doing that with api, service, co
 
 How to Start:
 
-After clone the code to your local, create a folder named ".idea" and move librarys folder and all other files except msb folder into the .idea folder.
+Clone the MASTER BRANCH
 Then Run the project.
