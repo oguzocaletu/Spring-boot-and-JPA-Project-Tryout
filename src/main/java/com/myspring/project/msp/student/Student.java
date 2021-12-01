@@ -24,6 +24,16 @@ public class Student
     private LocalDate dob;
     private String email;
 
+    public Student(String name,
+                   int age,
+                   String email,
+                   LocalDate dob) {
+        this.name = name;
+        this.age = age;
+
+        this.email = email;
+        this.dob = dob;
+    }
 
     public Student(Long id,
                    String name,
@@ -33,8 +43,8 @@ public class Student
         this.id = id;
         this.name = name;
         this.age = age;
-        this.dob = dob;
         this.email = email;
+        this.dob = dob;
     }
 
     public Long getId() {

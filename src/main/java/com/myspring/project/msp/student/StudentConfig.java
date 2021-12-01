@@ -17,7 +17,6 @@ public class StudentConfig {
     ){
         return args -> {
             Student Faruk=new Student(
-                    1L,
                     "Faruk",
                     32,
                     "FarukYilmaz@gmail.com",
@@ -25,7 +24,6 @@ public class StudentConfig {
 
             );
             Student Fatma= new Student (
-                    2L,
                     "Fatma",
                     28,
                     "Fatma@gmail.com",
@@ -33,8 +31,7 @@ public class StudentConfig {
 
             );
             Student ayca= new Student (
-                    3L,
-                    "",
+                    "ayca",
                     26,
                     "ayca@gmail.com",
                     LocalDate.of(1995, Month.OCTOBER,30)
