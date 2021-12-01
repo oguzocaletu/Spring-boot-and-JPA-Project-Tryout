@@ -30,16 +30,16 @@ public class StudentConfig {
                     LocalDate.of(1993, Month.DECEMBER,21)
 
             );
-            Student Ayca= new Student (
+            Student ayca= new Student (
                     3L,
-                    "Fatma",
+                    "",
                     26,
-                    "Fatma@gmail.com",
+                    "ayca@gmail.com",
                     LocalDate.of(1995, Month.OCTOBER,30)
 
             );
             repository.saveAll(
-                    List.of(Faruk,Fatma,Ayca)
+                    List.of(Faruk,Fatma,ayca)
             );
         };
     }
